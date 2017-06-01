@@ -2,13 +2,29 @@
 <html lang="ru">
   <head>
   	<meta charset="utf-8">
-      <title>Gllasy</title>
+      <title>Мишка</title>
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <p>Tedddst336</p>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__shop-list">
+          <li class="main-nav__shop-item">
+            <input class="main-nav__shop-search" type="text" name="header-search" id="header-search" placeholder="Поиск по сайту">
+          </li>
+          <li class="main-nav__shop-item">
+            <a class="main-nav__shop-cart" href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   </body>
 </html>
