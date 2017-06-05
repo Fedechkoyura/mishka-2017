@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+  	<meta charset="utf-8">
+      <title>Мишка - форма заказа</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style-min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href="index.html"><img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка"></a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a>Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__shop-list">
+            <li class="main-nav__shop-item">
+              <input class="main-nav__shop-search" type="text" name="header-search"
+               id="header-search" placeholder="Поиск по сайту">
+            </li>
+            <li class="main-nav__shop-item">
+              <a class="main-nav__shop-cart" href="">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-form">
+      <div class="main-form__wrapper container">
+        <h1 class="page-title">Вязание на заказ</h1>
+        <p class="main-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order-form" action="index.html" method="post">
+          <div class="order-form__item">
+
+            <span class="order-form__title">Тип</span>
+
+            <input type="radio" id="accessory-order" name="type" value="Accessory for Interior" checked>
+            <label for="accessory-order">Аксессуар для интерьера</label>
+
+            <input type="radio" id="order-for-child" name="type" value="Toy for child">
+            <label for="order-for-child">Детская игрушка</label>
+
+          </div>
+          <div class="order-form__item">
+            <span class="order-form__title">Цвет</span>
+
+            <input type="checkbox" id="white-order" name="color" value="White" checked>
+            <label for="white-order">Белый</label>
+
+            <input type="checkbox" id="gray-order" name="color" value="Gray" checked>
+            <label for="gray-order">Серый</label>
+
+            <input type="checkbox" id="tiffani-order" name="color" value="Tiffani">
+            <label for="tiffani-order">&laquo;Тиффани&raquo;</label>
+
+            <input type="checkbox" id="black-order" name="color" value="Black">
+            <label for="black-order">Черный</label>
+
+            <input type="checkbox" id="pink-order" name="color" value="Pink">
+            <label for="pink-order">Розовый</label>
+
+            <input type="checkbox" id="orange-order" name="color" value="Orange">
+            <label for="orange-order">Оранжевый</label>
+          </div>
+          <div class="order-form__item">
+            <span class="order-form__title">Фио</span>
+
+            <label for="last-name-order">Фамилия:</label>
+            <input type="text" id="last-name-order" name="last-name" placeholder="Укажите фамилию">
+
+            <label for="first-name-order">Имя:</label>
+            <input type="text" id="first-name-order" name="first-name" placeholder="Введите ваше имя">
+
+            <label for="patronymic-order">Отчество:</label>
+            <input type="text" id="patronymic-order" name="patronymic" placeholder="Отчество, если желаете">
+          </div>
+          <div class="order-form__item">
+            <span class="order-form__title">Тел</span>
+            <input type="tel" name="phone-number" placeholder="+7 ХХХ ХХ ХХ" pattern="[0-9]{3} [0-9]{2} [0-9]{2}">
+          </div>
+          <div class="order-form__item">
+            <span class="order-form__title">E-mail</span>
+            <input type="email" name="email" placeholder="Ваш e-mail">
+          </div>
+          <div class="order-form__item">
+            <span class="order-form__title">Доп</span>
+            <textarea name="comments" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+          <input class="order-form__btn btn" type="submit" name="make-order" value="Отправить заказ">
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social">
+          <span class="page-footer__social-list">
+            <a class="social-link social-link-in" href="#">Инстаграмм</a>
+            <a class="social-link social-link-fb" href="#">Фейсбук</a>
+            <a class="social-link social-link-tw" href="#">Твиттер</a>
+          </span>
+          <div class="page-footer__copyright">
+            <span>Разработано</span>
+            <img src="http://placehold.it/27x34" width="27" height="34" alt="Разработано Федечко Юрием">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
